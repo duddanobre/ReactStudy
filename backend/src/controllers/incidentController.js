@@ -10,7 +10,14 @@ module.exports = {
         .join('ongs', 'ongs.id', '=', 'incidents.ong_id')
         .limit(5)
         .offset((page - 1 )* 5)
-        .select(['incidents.*', 'ongs.name', 'ongs.email']);
+            .select([
+            'incidents.*',
+            'ongs.name', 
+            'ongs.email',
+            'ongs.whatsapp',
+            'ongs.cidade', 
+            'ongs.uf'
+            ]);
     
         response.header('Total', count['count(*)']);
         return response.json(incidents);
