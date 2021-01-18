@@ -1,2 +1,2 @@
 # ReactStudy
-Curso de react da rocketseat 
+App para ONGS
