@@ -1,2 +1,2 @@
 # ReactStudy
-App utilizando react native + Expo para ONGs
+Aplicação web em react e node para ONGs
