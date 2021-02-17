@@ -4,7 +4,7 @@ module.exports = {
     async create(request, response){
         const { id } = request.body;
 
-        const ong = await conection('ongs')
+        const ong = await conect('ongs')
             .where('id', id)
             .select('name')
             .first();
